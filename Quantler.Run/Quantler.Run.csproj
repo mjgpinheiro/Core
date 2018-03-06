@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>netcoreapp2.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.1.1-beta" />
+    <PackageReference Include="NLog" Version="4.5.0-rc01" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Quantler.Bootstrap\Quantler.Bootstrap.csproj" />
+    <ProjectReference Include="..\Quantler.Configuration\Quantler.Configuration.csproj" />
+    <ProjectReference Include="..\Quantler\Quantler.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

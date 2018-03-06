@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Modules\Universe\" />
+    <Folder Include="Plugins\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Quantler.Indicators\Quantler.Indicators.csproj" />
+    <ProjectReference Include="..\Quantler.Modules\Quantler.Modules.csproj" />
+    <ProjectReference Include="..\Quantler\Quantler.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Quantler.Core</PackageId>
+    <Authors>Quantler B.V.</Authors>
+    <Description>Quantler Core framework library</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>Copyright 2017 (c) Quantler B.V. All rights reserved.</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Jil" Version="2.15.4" />
+    <PackageReference Include="MathNet.Numerics.Core" Version="3.17.0" />
+    <PackageReference Include="MessagePack" Version="1.7.2" />
+    <PackageReference Include="MessagePackAnalyzer" Version="1.6.0" />
+    <PackageReference Include="Microsoft.Composition" Version="1.0.31" />
+    <PackageReference Include="morelinq" Version="2.8.0" />
+    <PackageReference Include="NLog" Version="4.5.0-rc01" />
+    <PackageReference Include="NodaTime" Version="2.2.3" />
+    <PackageReference Include="System.Composition" Version="1.1.0" />
+    <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Quantler.Configuration\Quantler.Configuration.csproj" />
+    <ProjectReference Include="..\Quantler.Machine\Quantler.Machine.csproj" />
+  </ItemGroup>
+  
+</Project>

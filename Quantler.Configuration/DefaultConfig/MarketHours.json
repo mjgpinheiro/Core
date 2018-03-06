@@ -1,0 +1,254 @@
+﻿//Exchange market hours and holiday information
+[
+  {
+    "Exchanges": [ "NasdaqGS", "NasdaqCM", "NasdaqGM", "CACVE", "BATS", "DEFSX", "NYSE MKT", "NYSE ARCA", "IEX" ],
+    "Type": "Equity",
+    "Holidays": [
+      {
+        "Name": "New Years Day",
+        "Comment": "First day of the year",
+        "Date": {
+          "Month": 1,
+          "Day": 1
+        }
+      },
+      {
+        "Name": "Martin Luther King Jr. Day",
+        "Comment": "Third monday in January",
+        "Date": {
+          "DayOccurance": 3,
+          "DayOfWeek": "Monday",
+          "Month": 1
+        }
+      },
+      {
+        "Name": "Washington's Birthday",
+        "Comment": "Third Monday in February",
+        "Date": {
+          "DayOccurance": 3,
+          "DayOfWeek": "Monday",
+          "Month": 2
+        }
+      },
+      {
+        "Name": "Good Friday",
+        "Comment": "Two days before easter sunday",
+        "Date": {
+          "BeforeHoliday": "Easter Sunday",
+          "DaysBeforeHoliday": 2
+        }
+      },
+      {
+        "Name": "Easter Sunday",
+        "Comment": "Is Derived From A Function: https://www.codeproject.com/Articles/10860/Calculating-Christian-Holidays"
+      },
+      {
+        "Name": "Memorial Day",
+        "Comment": "Last Monday in May",
+        "Date": {
+          "Month": 5,
+          "DayOfWeek": "Monday",
+          "IsLastDayOccurance": true
+        }
+      },
+      {
+        "Name": "Independence Day",
+        "Comment": "July 4th",
+        "Date": {
+          "Month": 6,
+          "Day": 4
+        }
+      },
+      {
+        "Name": "Day Before Independence Day",
+        "Comment": "The day before",
+        "Date": {
+          "BeforeHoliday": "Independence Day",
+          "DaysBeforeHoliday": 1
+        },
+        "Closed": "13:00:00"
+      },
+      {
+        "Name": "Labor Day",
+        "Comment": "First Monday in September",
+        "Date": {
+          "DayOccurance": 1,
+          "DayOfWeek": "Monday",
+          "Month": 8
+        }
+      },
+      {
+        "Name": "Thanksgiving",
+        "Comment": "Fourth Thursday in November",
+        "Date": {
+          "DayOccurance": 4,
+          "DayOfWeek": "Thursday",
+          "Month": 10
+        }
+      },
+      {
+        "Name": "Day After Thanksgiving",
+        "Comment": "The day after Thanksgiving",
+        "Date": {
+          "AfterHoliday": "Thanksgiving",
+          "DaysAfterHoliday": 1
+        },
+        "Closed": "13:00:00"
+      },
+      {
+        "Name": "Christmas Day",
+        "Comment": "25th of December",
+        "Date": {
+          "Month": 12,
+          "Day": 25
+        },
+        "Closed": "13:00:00"
+      }
+    ],
+    "Monday": [
+      {
+        "End": "09:30:00",
+        "Session": "premarket",
+        "Start": "08:00:00"
+      },
+      {
+        "End": "16:00:00",
+        "Session": "market",
+        "Start": "09:30:00"
+      },
+      {
+        "End": "17:00:00",
+        "Session": "postmarket",
+        "Start": "16:00:00"
+      }
+    ],
+    "Tuesday": [
+      {
+        "End": "09:30:00",
+        "Session": "premarket",
+        "Start": "08:00:00"
+      },
+      {
+        "End": "16:00:00",
+        "Session": "market",
+        "Start": "09:30:00"
+      },
+      {
+        "End": "17:00:00",
+        "Session": "postmarket",
+        "Start": "16:00:00"
+      }
+    ],
+    "Wednesday": [
+      {
+        "End": "09:30:00",
+        "Session": "premarket",
+        "Start": "08:00:00"
+      },
+      {
+        "End": "16:00:00",
+        "Session": "market",
+        "Start": "09:30:00"
+      },
+      {
+        "End": "17:00:00",
+        "Session": "postmarket",
+        "Start": "16:00:00"
+      }
+    ],
+    "Thursday": [
+      {
+        "End": "09:30:00",
+        "Session": "premarket",
+        "Start": "08:00:00"
+      },
+      {
+        "End": "16:00:00",
+        "Session": "market",
+        "Start": "09:30:00"
+      },
+      {
+        "End": "17:00:00",
+        "Session": "postmarket",
+        "Start": "16:00:00"
+      }
+    ],
+    "Friday": [
+      {
+        "End": "09:30:00",
+        "Session": "premarket",
+        "Start": "08:00:00"
+      },
+      {
+        "End": "16:00:00",
+        "Session": "market",
+        "Start": "09:30:00"
+      },
+      {
+        "End": "17:00:00",
+        "Session": "postmarket",
+        "Start": "16:00:00"
+      }
+    ],
+    "Saturday": [
+    ],
+    "Sunday": [
+    ],
+    "TimeZone": "America/New_York"
+  },
+  {
+    "Exchanges": [ "Crypto" ],
+    "Type": "Crypto",
+    "Holidays": [],
+    "Monday": [
+      {
+        "End": "23:59:59.999",
+        "Session": "market",
+        "Start": "00:00:00.000"
+      }
+    ],
+    "Tuesday": [
+      {
+        "End": "23:59:59.999",
+        "Session": "market",
+        "Start": "00:00:00.000"
+      }
+    ],
+    "Wednesday": [
+      {
+        "End": "23:59:59.999",
+        "Session": "market",
+        "Start": "00:00:00.000"
+      }
+    ],
+    "Thursday": [
+      {
+        "End": "23:59:59.999",
+        "Session": "market",
+        "Start": "00:00:00.000"
+      }
+    ],
+    "Friday": [
+      {
+        "End": "23:59:59.999",
+        "Session": "market",
+        "Start": "00:00:00.000"
+      }
+    ],
+    "Saturday": [
+      {
+        "End": "23:59:59.999",
+        "Session": "market",
+        "Start": "00:00:00.000"
+      }
+    ],
+    "Sunday": [
+      {
+        "End": "23:59:59.999",
+        "Session": "market",
+        "Start": "00:00:00.000"
+      }
+    ],
+    "TimeZone": "Etc/UTC"
+  }
+]

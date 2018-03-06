@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CacheManager.Core" Version="1.1.2" />
+    <PackageReference Include="NetMQ" Version="4.0.0.1" />
+    <PackageReference Include="NLog" Version="4.5.0-rc01" />
+    <PackageReference Include="System.Composition" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Quantler.Api\Quantler.Api.csproj" />
+    <ProjectReference Include="..\Quantler.Brokers\Quantler.Brokers.csproj" />
+    <ProjectReference Include="..\Quantler.Configuration\Quantler.Configuration.csproj" />
+    <ProjectReference Include="..\Quantler.DataFeeds\Quantler.DataFeeds.csproj" />
+    <ProjectReference Include="..\Quantler.Fund\Quantler.Fund.csproj" />
+    <ProjectReference Include="..\Quantler\Quantler.csproj" />
+  </ItemGroup>
+
+</Project>

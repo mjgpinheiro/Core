@@ -1,0 +1,11 @@
+language: csharp
+dotnet: 2.0.0
+mono: none
+dist: trusty
+solution: Quantler.Core.sln
+script:
+  - dotnet restore 
+  - dotnet test
+  - dotnet publish
+after_success:
+  - coveralls

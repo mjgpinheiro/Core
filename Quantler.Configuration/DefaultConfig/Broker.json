@@ -1,0 +1,50 @@
+﻿[
+  {
+    "BrokerType": "RobinHood",
+    "CurrencyImplementation": "Quantler.Bootstrap.CurrencyModels.FiatCurrency",
+    "DataFeed": "Quantler.DataFeeds.IEXPublic.IEXDataFeed",
+    "BrokerConnection": "",
+    "OrderTicketHandler": "Quantler.Bootstrap.TicketHandlers.OrderTicketHandlerEquity",
+    "Exchanges": [ "IEX" ]
+  },
+  {
+    "BrokerType": "FreeTrade",
+    "CurrencyImplementation": "Quantler.Bootstrap.CurrencyModels.FiatCurrency",
+    "DataFeed": "Quantler.DataFeeds.IEXPublic.IEXDataFeed",
+    "BrokerConnection": "",
+    "OrderTicketHandler": "Quantler.Bootstrap.TicketHandlers.OrderTicketHandlerEquity",
+    "Exchanges": [ "IEX" ]
+  },
+  {
+    "BrokerType": "Bittrex",
+    "CurrencyImplementation": "Quantler.Bootstrap.CurrencyModels.CryptoCurrency",
+    "DataFeed": "Quantler.DataFeeds.BittrexPublic.BittrexDataFeed",
+    "BrokerConnection": "",
+    "OrderTicketHandler": "Quantler.Bootstrap.TicketHandlers.OrderTicketHandlerCrypto",
+    "Exchanges": [ "crypto" ]
+  },
+  {
+    "BrokerType": "HitBtc",
+    "CurrencyImplementation": "Quantler.Bootstrap.CurrencyModels.CryptoCurrency",
+    "DataFeed": "Quantler.DataFeeds.BittrexPublic.HitBtcDataFeed",
+    "BrokerConnection": "",
+    "OrderTicketHandler": "Quantler.Bootstrap.TicketHandlers.OrderTicketHandlerCrypto",
+    "Exchanges": [ "crypto" ]
+  },
+  {
+    "BrokerType": "CobinHood",
+    "CurrencyImplementation": "Quantler.Bootstrap.CurrencyModels.CryptoCurrency",
+    "DataFeed": "Quantler.DataFeeds.CobinHoodPublic.CobinHoodDataFeed",
+    "BrokerConnection": "",
+    "OrderTicketHandler": "Quantler.Bootstrap.TicketHandlers.OrderTicketHandlerCrypto",
+    "Exchanges": [ "crypto" ]
+  },
+  {
+    "BrokerType": "Binance",
+    "CurrencyImplementation": "Quantler.Bootstrap.CurrencyModels.CryptoCurrency",
+    "DataFeed": "Quantler.DataFeeds.BinancePublic.BinanceDataFeed",
+    "BrokerConnection": "",
+    "OrderTicketHandler": "Quantler.Bootstrap.TicketHandlers.OrderTicketHandlerCrypto",
+    "Exchanges": [ "crypto" ]
+  }
+]

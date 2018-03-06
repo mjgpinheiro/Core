@@ -1,0 +1,1 @@
+﻿Local implementations for local usage

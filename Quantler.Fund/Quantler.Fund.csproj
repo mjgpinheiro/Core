@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="QuantFund.Orders.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Guardo" Version="1.0.0" />
+    <PackageReference Include="morelinq" Version="2.8.0" />
+    <PackageReference Include="NLog" Version="4.5.0-rc01" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Quantler.Api\Quantler.Api.csproj" />
+    <ProjectReference Include="..\Quantler.Indicators\Quantler.Indicators.csproj" />
+    <ProjectReference Include="..\Quantler.Modules\Quantler.Modules.csproj" />
+    <ProjectReference Include="..\Quantler\Quantler.csproj" />
+  </ItemGroup>
+
+</Project>

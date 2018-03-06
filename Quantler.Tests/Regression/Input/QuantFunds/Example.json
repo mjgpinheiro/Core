@@ -1,0 +1,35 @@
+﻿//Example regression quant fund
+{
+  "Assembly": "",
+  "AccountType": "Cash",
+  "BaseCurrency": "USD",
+  "BrokerType": "CobinHood",
+  "DisplayCurrency": "USD",
+  "StartDateUtc": 1506816000,
+  "EndDateUtc": 1509494400,
+  "ExtendedMarketHours": false,
+  "Leverage": 1,
+  "QuantFunds": [
+    {
+      "Name": "TestingFund",
+      "Universe": [
+        {
+          "Ticker": "ETH.BC",
+          "Weight": 0.50
+        },
+        {
+          "Ticker": "MLN.BC",
+          "Weight": 0.50
+        }
+      ],
+      "UniverseName": "Testing Universe",
+      "AllocatedFunds": 10000,
+      "ForceTick": true,
+      "Parameters": [],
+      "Modules": [
+        "PeriodicallyRebalance",
+        "AlwaysLongSignal"
+      ]
+    }
+  ]
+}

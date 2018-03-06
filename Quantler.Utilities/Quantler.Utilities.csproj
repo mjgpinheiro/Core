@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netcoreapp1.1|AnyCPU'">
+    <OutputType>exe</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.0</TargetFrameworks>
+    <ApplicationIcon />
+    <OutputTypeEx>exe</OutputTypeEx>
+    <OutputType>Exe</OutputType>
+    <Authors>Quantler B.V.</Authors>
+    <Company>Quantler B.V.</Company>
+    <Product>Quantler</Product>
+    <StartupObject>Quantler.Utilities.DataConverter.Program</StartupObject>
+    <AssemblyName>Quantler.Utilities</AssemblyName>
+    <RootNamespace>Quantler.Utilities</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.1.1-beta" />
+    <PackageReference Include="Flurl.Http" Version="2.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="NLog" Version="4.5.0-rc01" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Quantler.Compression\Quantler.Compression.csproj" />
+    <ProjectReference Include="..\Quantler.DataFeeds\Quantler.DataFeeds.csproj" />
+    <ProjectReference Include="..\Quantler\Quantler.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="IEXHistoricalData\iexTopsPcap2Json.1.15.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

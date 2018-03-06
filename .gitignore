@@ -1,0 +1,13 @@
+*/bin/
+*/obj/
+packages/
+
+*.vpp
+*/vpproject/
+*.build
+buildartifacts/
+*.psess
+*.vspx
+*.suo
+*.user
+.vs/

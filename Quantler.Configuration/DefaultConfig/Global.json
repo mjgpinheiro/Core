@@ -1,0 +1,60 @@
+﻿//Global settings file
+{
+  //Environment based
+  "Mode": "Backtester", //Modes: Backtester or LiveTrading
+
+  //Default Implementations
+  "JobQueue": "Quantler.Bootstrap.MessageQueues.LocalQueue",
+  "Benchmark": "Quantler.Performance.UniverseBenchmark",
+  "EventRunner": "Quantler.Bootstrap.MessagingEvents.ConsoleRunner",
+  "DataFeed": "Quantler.DataFeeds.Quantler.HistoricalLocalFeed",
+  "Currency": "",
+  "ActionsScheduler": "Quantler.Bootstrap.Schedulers.BacktestScheduler",
+  "BrokerConnection": "Quantler.Brokers.Simulated.SimBroker",
+  "Cluster": "Quantler.Bootstrap.Clusters.NonClustered",
+  "DataFilter": "Quantler.Data.Market.Filter.NoDataFilter",
+  "ExceptionHandler": "Quantler.Bootstrap.ExceptionHandlers.DefaultExceptionHandler",
+  "MessageQueue": "Quantler.Bootstrap.MessageQueues.NetMQQueue",
+  "OrderTicketHandler": "",
+
+  //Settings
+  //Max time for backtesting in seconds
+  "BacktestTimeMaxSeconds": 1800,
+
+  //Maximum amount of orders per day
+  "MaxOrdersPerDay": 100,
+
+  //If true, ignore version differences
+  "IgnoreVersionChecks": false,
+
+  //Minimum cycle wait time for new data checks
+  "DataFeedWaitTimeInMS": 100,
+
+  //Name of this server location
+  "ServerLocation": "Amsterdam",
+
+  //Name of this server instance
+  "ServerName": "Local",
+
+  //If true, log scheduler events
+  "SchedulerLoggingEnabled": true,
+
+  //Quantler DataFeed Settigns
+  "HistEndpoint": "",
+  "HistStart": "",
+  "HistEnd": "",
+  "DataFeedEndpoint": "",
+
+  //Event runner settigns
+  "NetMQRunnerPort": "1221",
+
+  //API tokens
+  "ApiKey": "",
+  "ApiSecret": "",
+
+  //Currency (either a local file or a remote file) => TODO: https://cdn.quantler.com/file/public/core/CurrencyRates.json => needs a function to do this and save in the cdn, can reuse some code => do not use CDN due to caching issue
+  "CurrencyRatesConfigFile": "CurrencyRates",
+
+  //Associated assemblies (plugins/quant funds) folder (custom implementations)
+  "AssembliesPath": ""
+}

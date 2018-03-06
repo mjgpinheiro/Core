@@ -1,0 +1,68 @@
+﻿//Local portfolio definition file
+{
+  //Full path of the assembly where the compiled modules can be found
+  "Assembly": "C:\\Users\\MennoHamburg\\Documents\\Visual Studio 2017\\Projects\\Quantler.Core.Internal\\Quantler.Local\\bin\\Debug\\netstandard2.0\\Quantler.Local.dll",
+
+  //Account type for the portfolio (Cash or Margin)
+  "AccountType": "Cash",
+
+  //Base account currency (EUR, USD or BTC or anything else)
+  "BaseCurrency": "USD",
+
+  //Broker type to use
+  "BrokerType": "CobinHood",
+
+  //Display currency for the UI (EUR, USD or BTC or anything else)
+  "DisplayCurrency": "USD",
+
+  //Start Date (in case this is a backtest) -> unix timestamp based
+  "StartDateUtc": 1506816000,
+
+  //End Date (in case this is a backtest) -> unix timestamp based
+  "EndDateUtc": 1509494400,
+
+  //If true, apply extended market hour timing for the entire portfolio
+  "ExtendedMarketHours": false,
+
+  //Account leverage to apply
+  "Leverage": 1,
+
+  //Collection of quant funds for this portfolio
+  "QuantFunds": [
+    {
+      //Name of the quant fund
+      "Name": "TestingFund",
+
+      //Static Universe definition
+      "StaticUniverse": [
+        {
+          "Ticker": "ETH.BC",
+          "Weight": 0.50
+        },
+        {
+          "Ticker": "MLN.BC",
+          "Weight": 0.50
+        }
+      ],
+
+      //Name of the universe
+      "UniverseName": "Testing Universe",
+
+      //Total allocated funds for this quant fund (based on base currency)
+      "AllocatedFunds": 10000,
+
+      //If true, all data is based on tick data
+      "ForceTick": true,
+
+      //Parameters to apply
+      "Parameters": [],
+
+      //Modules that make up this quant fund
+      "Modules": [
+        "PeriodicallyRebalance",
+        "AlwaysLongSignal",
+        "SomeUniverseModel" //TODO: Implement static universe model
+      ]
+    }
+  ]
+}

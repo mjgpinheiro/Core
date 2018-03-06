@@ -1,0 +1,11 @@
+﻿//Backtest related settings
+{
+  //Market data location
+  "MarketDataFolder": "D:\\MarketData\\",
+
+  //If true, caching will be enabled (which can speed up running multiple backtests)
+  "UseCache": true,
+
+  //If true, do not take in to account the order book, expect fills to be "highly liquid"
+  "HighlyLiquidFills": true
+}

@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CacheManager.Core" Version="1.1.2" />
+    <PackageReference Include="Flurl.Http" Version="2.0.1" />
+    <PackageReference Include="Jil" Version="2.15.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="NLog" Version="4.5.0-rc01" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Quantler.Machine\Quantler.Machine.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="DefaultConfig\Simulation.json">
+      <Pack>true</Pack>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultConfig\Broker.json">
+      <Pack>true</Pack>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultConfig\CurrencyRates.json">
+      <Pack>true</Pack>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultConfig\Global.json">
+      <Pack>true</Pack>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultConfig\MarketHours.json">
+      <Pack>true</Pack>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultConfig\Portfolio.json">
+      <Pack>true</Pack>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultConfig\SecurityConfig.json">
+      <Pack>true</Pack>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
