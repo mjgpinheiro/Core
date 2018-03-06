@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Regression\Input\QuanttFunds\Example.json">
+    <Content Include="Regression\Input\QuantFunds\Example.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <Pack>true</Pack>
     </Content>
