@@ -32,12 +32,12 @@ namespace Quantler.Run
         /// <summary>
         /// Logging instance
         /// </summary>
-        private static ILogger Log = LogManager.GetCurrentClassLogger();
+        private static readonly ILogger Log = LogManager.GetCurrentClassLogger();
 
         /// <summary>
         /// Main instance
         /// </summary>
-        private static Bootstrap.Bootstrap Bootstrap;
+        private static Bootstrap.Bootstrap _bootstrap;
 
         /// <summary>
         /// Program entrypoint
@@ -92,8 +92,8 @@ namespace Quantler.Run
                 }
 
                 //Start
-                Bootstrap = new Bootstrap.Bootstrap(instanceimplementation);
-                var bootstrap = Task.Run(() => Bootstrap.Run(runmode));
+                _bootstrap = new Bootstrap.Bootstrap(instanceimplementation);
+                var bootstrap = Task.Run(() => _bootstrap.Run(runmode));
 
                 //Wait for it
                 bootstrap.Wait();
@@ -116,7 +116,7 @@ namespace Quantler.Run
         {
             try
             {
-                Bootstrap.Exit();
+                _bootstrap.Exit();
             }
             catch (Exception exception)
             {
