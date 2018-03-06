@@ -118,7 +118,7 @@ In the Portfolio.json file you can specify how your Quant Fund should look like 
 
 ## Contributing
 
-Please read [CONTRIBUTING](https://github.com/Quantler/Core/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING](https://github.com/Quantler/Core/blob/master/Contributing.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
@@ -126,7 +126,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## License
 
-This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE.md) file for details
+This project is licensed under the Apache 2.0 License - see the [LICENSE](https://github.com/Quantler/Core/blob/master/LICENSE) file for details
 
 ## Acknowledgments
 

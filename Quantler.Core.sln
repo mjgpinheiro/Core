@@ -28,6 +28,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Folder", "Solution Folder", "{7BB541A2-F88F-4708-99AA-50B7FA5CD8D2}"
 	ProjectSection(SolutionItems) = preProject
 		.travis.yml = .travis.yml
+		Contributing.md = Contributing.md
 		Dockerfile = Dockerfile
 		Readme.md = Readme.md
 	EndProjectSection
