@@ -5,7 +5,6 @@ dist: trusty
 solution: Quantler.Core.sln
 script:
   - dotnet restore 
-  - dotnet test
-  - dotnet publish
+  - dotnet test Quantler.Tests/Quantler.Tests.csproj
 after_success:
   - coveralls
